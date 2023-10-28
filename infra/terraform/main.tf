@@ -39,3 +39,9 @@ resource "aws_s3_bucket" "mixfast_s3_bucket_app" {
 
   tags = var.tags
 }
+
+resource "aws_s3_bucket" "mixfast_s3_bucket_cognito" {
+  bucket = "${var.name}-s3-bucket-cognito"
+
+  tags = var.tags
+}
