@@ -51,3 +51,9 @@ resource "aws_s3_bucket" "mixfast_s3_bucket_lambda" {
 
   tags = var.tags
 }
+
+resource "aws_s3_bucket" "mixfast_s3_bucket_api_gateway_token" {
+  bucket = "${var.name}-s3-bucket-api-gateway-token"
+
+  tags = var.tags
+}
