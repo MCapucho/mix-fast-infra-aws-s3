@@ -22,6 +22,12 @@ resource "aws_s3_bucket" "mixfast_s3_bucket_nlb" {
   tags = var.tags
 }
 
+resource "aws_s3_bucket" "mixfast_s3_bucket_rds" {
+  bucket = "${var.name}-s3-bucket-rds"
+
+  tags = var.tags
+}
+
 resource "aws_s3_bucket" "mixfast_s3_bucket_ecs" {
   bucket = "${var.name}-s3-bucket-ecs"
 
