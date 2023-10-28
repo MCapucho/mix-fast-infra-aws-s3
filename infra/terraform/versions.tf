@@ -7,8 +7,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "${var.name}-s3-bucket"
-    key    = "${var.name}-infrastructure"
-    region = var.region
+    bucket = "mixfast-s3-bucket"
+    key    = "mixfast-infrastructure"
+    region = "us-east-1"
   }
 }
