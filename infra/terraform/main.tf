@@ -63,3 +63,9 @@ resource "aws_s3_bucket" "mixfast_s3_bucket_api_gateway_token" {
 
   tags = var.tags
 }
+
+resource "aws_s3_bucket" "mixfast_s3_bucket_secrets_manager" {
+  bucket = "${var.name}-s3-bucket-secrets-manager"
+
+  tags = var.tags
+}
