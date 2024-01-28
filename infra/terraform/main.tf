@@ -75,3 +75,9 @@ resource "aws_s3_bucket" "mixfast_s3_bucket_secrets_manager" {
 
   tags = var.tags
 }
+
+resource "aws_s3_bucket" "mixfast_s3_bucket_dynamodb" {
+  bucket = "${var.name}-s3-bucket-dynamodb"
+
+  tags = var.tags
+}
