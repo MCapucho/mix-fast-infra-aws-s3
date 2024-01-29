@@ -46,6 +46,12 @@ resource "aws_s3_bucket" "mixfastpagamento_s3_bucket_app" {
   tags = var.tags
 }
 
+resource "aws_s3_bucket" "mixfastproducao_s3_bucket_app" {
+  bucket = "${var.name}producao-s3-bucket-app"
+
+  tags = var.tags
+}
+
 resource "aws_s3_bucket" "mixfast_s3_bucket_cognito" {
   bucket = "${var.name}-s3-bucket-cognito"
 
