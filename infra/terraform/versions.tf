@@ -6,9 +6,9 @@ terraform {
     }
   }
 
-  backend "s3" {
-    bucket = "fiap-mixfast-s3-bucket"
-    key    = "fiap-mixfast-infrastructure"
-    region = "us-east-1"
-  }
+#  backend "s3" {
+#    bucket = "fiap-mixfast-s3-bucket"
+#    key    = "fiap-mixfast-infrastructure"
+#    region = "us-east-1"
+#  }
 }
