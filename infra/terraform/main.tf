@@ -88,7 +88,7 @@ resource "aws_s3_bucket" "mixfastproducao_s3_bucket_app" {
   tags = var.tags
 }
 
-resource "aws_s3_bucket" "mixfastproducao_s3_bucket_app" {
+resource "aws_s3_bucket" "mixfast_s3_bucket_sqs" {
   bucket = "${var.name}-s3-bucket-sqs"
 
   tags = var.tags
