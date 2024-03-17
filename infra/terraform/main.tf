@@ -87,3 +87,9 @@ resource "aws_s3_bucket" "mixfastproducao_s3_bucket_app" {
 
   tags = var.tags
 }
+
+resource "aws_s3_bucket" "mixfastproducao_s3_bucket_app" {
+  bucket = "${var.name}-s3-bucket-sqs"
+
+  tags = var.tags
+}
