@@ -99,3 +99,9 @@ resource "aws_s3_bucket" "mixfast_s3_bucket_sqs" {
 
   tags = var.tags
 }
+
+resource "aws_s3_bucket" "pontofast_s3_bucket_cognito" {
+  bucket = "${var.name}-s3-bucket-sqs"
+
+  tags = var.tags
+}
